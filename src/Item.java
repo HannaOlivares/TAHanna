@@ -10,20 +10,27 @@ public class Item {
         this.name = name;
         this.desc = desc;
         this.value = value;
+
+    }
+    public void setName(String Name){
+        this.name = Name;
+
+    }
+    public String getName() {
+        return name;
     }
 
     static class Gold extends Item {
-
-
+        private int amt;
         public Gold(int amt) {
             super("Gold", String.format("Big Gold Bar! %d", amt), amt);
             this.value = amt;
-
         }
     }
 
+
     static class Weapon extends Item {
-        private int damage;
+        private int damage; //protect the data/control Weapon can only access damage
 
         public int getDamage() {
             return damage;
@@ -33,6 +40,9 @@ public class Item {
             this.damage = damage;
         }
 
+        public void setName(String Name) {
+            this.name = Name;
+        }
         public Weapon(String name, String desc, int value, int damage) {
             super(name, desc, value);
             this.damage = damage;
@@ -41,13 +51,13 @@ public class Item {
 
         static class Mace extends Weapon {
             public Mace() {
-                super("Mace", "A mace is slightly more dangerous than a Sword", 10, 30);
+                super("Mace", "A mace is slightly more dangerous than a Sword", 10, 15);
             }
         }
         static class Sword extends Weapon {
             public Sword(){
-                super("Sword", "A sword is made out of silver and causes a lot of damage", 15, 30);
-            }
+                super("Sword", "Silver handmade lethal object that can cause death",10, 15);
+            } //super goes the Weapon class
         }//this is the end of Sword class
         static class Pillow extends Weapon {
 
