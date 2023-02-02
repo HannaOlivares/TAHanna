@@ -1,10 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Item.Gold goldBar = new Item.Gold(100);
-        Item.Weapon weapon = new Item.Weapon("super weapon", "Can do a lot damage", 5, 40);
-        weapon.setDamage(40);
-        int dvalue = weapon.getDamage();
+        Gold  goldBar = new Gold(100);
+        Weapon superweapon = new Weapon("super weapon", "Can do a lot damage", 5, 40);
+        superweapon.setDamage(40);
+        int dvalue = superweapon.getDamage();
         System.out.println(dvalue);
         goldBar.setName("goldBar");
         System.out.println(goldBar.getName());
@@ -13,38 +13,43 @@ public class Main {
         System.out.println(gameboard.name);
 
         //magicSword
-        Item.Weapon.Sword magicSword = new Item.Weapon.Sword();
+        Item magicSword = new Sword();
         magicSword.setName("magicSword");
         System.out.println(magicSword.getName());
 
         //system.out.println(supperSword.name + " " + superSword.description);
 
-
         //start of pillow
-        Item.Weapon.Pillow softPillow = new Item.Weapon.Pillow();
+        Weapon softPillow = new Pillow();
         softPillow.setName("softPillow");
         System.out.println(softPillow.getName());
         //start of Mace
-        Item.Weapon.Mace bigMace = new Item.Weapon.Mace();
+        Weapon bigMace = new Mace();
         bigMace.setName("bigMace");
         System.out.println(bigMace.getName());
-        Item.Weapon.Arrow bigArrow = new Item.Weapon.Arrow();
+
+        Weapon bigArrow = new Arrow();
         bigArrow.setName("bigArrow");
         System.out.println(bigArrow.getName());
 
 //call the constructors by stepping into it
- //use the debug
-     //   Player player1 = new Player("Hanna", (short)100,(short)10,true);
-      //  if (player1.getLife())
-      //  System.out.println("Player is alive");
-       // else
-     //   System.out.println("Player is not alive");
+        //use the debug
+        //   Player player1 = new Player("Hanna", (short)100,(short)10,true);
+        //  if (player1.getLife())
+        //  System.out.println("Player is alive");
+        // else
+        //   System.out.println("Player is not alive");
 
-      //  Player player2 = new Player("SW", (short)0,(short)100,true);
-       // if (player1.getLife())
-       // System.out.println("Player is alive");
-       // else
-       // System.out.println("Player is not alive");
+        //  Player player2 = new Player("SW", (short)0,(short)100,true);
+        // if (player1.getLife())
+        // System.out.println("Player is alive");
+        // else
+        // System.out.println("Player is not alive");
     }
-}
 
+    Ogre Ogre = new Ogre();
+    Ogre redOgre = new Ogre();
+    Ogre greeeOgre = new Ogre();
+
+}
+//objects: greenOgre, redOgre, slowZombie, fastZombie, spotDog, yourNameYourObject
