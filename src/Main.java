@@ -45,11 +45,31 @@ public class Main {
         // System.out.println("Player is alive");
         // else
         // System.out.println("Player is not alive");
+        Ogre redOgre = new Ogre();
+        redOgre.setName("redOgre");
+        System.out.println(redOgre.getName());
+
+        Ogre greeeOgre = new Ogre();
+        redOgre.setName("greenOgre");
+        System.out.println(redOgre.getName());
+
+        Zombie slowZombie = new Zombie();
+        slowZombie.setName("slowZombie");
+        System.out.println(slowZombie.getName());
+
+        Zombie fastZombie = new Zombie();
+        fastZombie.setName("fastZombie");
+        System.out.println(fastZombie.getName());
+
+        Dog spotDog = new Dog();
+        spotDog.setName("spotDog");
+        System.out.println(spotDog.getName());
+
+        Cougar GiantCougar = new Cougar();
+        GiantCougar.setName("GiantCougar");
+        System.out.println(GiantCougar.getName());
     }
 
-    Ogre Ogre = new Ogre();
-    Ogre redOgre = new Ogre();
-    Ogre greeeOgre = new Ogre();
 
 }
-//objects: greenOgre, redOgre, slowZombie, fastZombie, spotDog, yourNameYourObject
+//objects:  spotDog, yourNameYourObject
