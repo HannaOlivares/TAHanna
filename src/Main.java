@@ -8,10 +8,18 @@ public class Main {
         System.out.println(dvalue);
         goldBar.setName("goldBar");
         System.out.println(goldBar.getName());
+
+        GameBoard gameboard = new GameBoard("tick tac toe");
+        System.out.println(gameboard.name);
+
         //magicSword
         Item.Weapon.Sword magicSword = new Item.Weapon.Sword();
         magicSword.setName("magicSword");
         System.out.println(magicSword.getName());
+
+        //system.out.println(supperSword.name + " " + superSword.description);
+
+
         //start of pillow
         Item.Weapon.Pillow softPillow = new Item.Weapon.Pillow();
         softPillow.setName("softPillow");
@@ -26,7 +34,17 @@ public class Main {
 
 //call the constructors by stepping into it
  //use the debug
-    }
+     //   Player player1 = new Player("Hanna", (short)100,(short)10,true);
+      //  if (player1.getLife())
+      //  System.out.println("Player is alive");
+       // else
+     //   System.out.println("Player is not alive");
 
+      //  Player player2 = new Player("SW", (short)0,(short)100,true);
+       // if (player1.getLife())
+       // System.out.println("Player is alive");
+       // else
+       // System.out.println("Player is not alive");
+    }
 }
 
