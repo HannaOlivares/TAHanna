@@ -72,8 +72,7 @@ public class Main {
         Cougar cougar = new Cougar(LethalClaws.Poisonous);
 
         Wizzard wizzard = new Wizzard(Spells.Fireballs);
-
+       // Action action = new Action(Method.Flee);
     }
 
 }
-//
