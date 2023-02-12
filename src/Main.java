@@ -68,8 +68,12 @@ public class Main {
         Cougar GiantCougar = new Cougar();
         GiantCougar.setName("GiantCougar");
         System.out.println(GiantCougar.getName());
+
+        Cougar cougar = new Cougar(LethalClaws.Poisonous);
+
+        Wizzard wizzard = new Wizzard(Spells.Fireballs);
+
     }
 
-
 }
-//objects:  spotDog, yourNameYourObject
+//

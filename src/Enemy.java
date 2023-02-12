@@ -25,6 +25,7 @@ public class Enemy {
         public Ogre(){
             super("Ogre", 20,30);
 
+
         }
     }
 
@@ -44,10 +45,27 @@ public class Enemy {
     public GiantSpider (){
         super("Giant Spider", 10,3);
     }
+
+
   }
 
-  class Cougar extends Enemy{
-    public Cougar(){
-        super("Giant Cougar",12,5);
+  class Wizzard extends Enemy{
+    private Spells spells;
+    public Wizzard(Spells spells){
+        //calls super class
+        this.spells = spells;
+        super("Wizzard", 20, 16);
     }
   }
+
+
+  class Cougar extends Enemy {
+    private LethalClaws lethalclaws;
+      public Cougar(LethalClaws lethalclaws) {
+          this.lethalclaws = lethalclaws;
+
+          super("Giant Cougar", 12, 5);
+      }
+
+    }
+
