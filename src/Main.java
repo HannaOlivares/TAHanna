@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        Gold  goldBar = new Gold(100);
+        Gold goldBar = new Gold(100);
         Weapon superweapon = new Weapon("super weapon", "Can do a lot damage", 5, 40);
         superweapon.setDamage(40);
         int dvalue = superweapon.getDamage();
@@ -68,15 +68,12 @@ public class Main {
         Cougar GiantCougar = new Cougar();
         GiantCougar.setName("GiantCougar");
         System.out.println(GiantCougar.getName());
-
-        //Cougar cougar = new Cougar(LethalClaws.Poisonous){
-
-
-        }
-
-
-       // Wizzard wizzard = new Wizzard(Spells.Fireballs);
-       // Action action = new Action(Method.Flee);
     }
 
 }
+
+       /* Wizzard wizzard = new Wizzard(Spells.Fireballs);
+       // Action action = new Action(Method.Flee);
+    }
+
+} */
