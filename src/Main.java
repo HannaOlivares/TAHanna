@@ -69,9 +69,13 @@ public class Main {
         GiantCougar.setName("GiantCougar");
         System.out.println(GiantCougar.getName());
 
-        Cougar cougar = new Cougar(LethalClaws.Poisonous);
+        //Cougar cougar = new Cougar(LethalClaws.Poisonous){
 
-        Wizzard wizzard = new Wizzard(Spells.Fireballs);
+
+        }
+
+
+       // Wizzard wizzard = new Wizzard(Spells.Fireballs);
        // Action action = new Action(Method.Flee);
     }
 

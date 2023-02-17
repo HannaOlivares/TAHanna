@@ -72,4 +72,7 @@ class Fight extends Action{
     public Fight(){
         super(Method.Fight,"Fight",'F',null);
     }
+
 }
+
+
