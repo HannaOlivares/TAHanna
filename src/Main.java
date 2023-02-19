@@ -65,15 +65,21 @@ public class Main {
         spotDog.setName("spotDog");
         System.out.println(spotDog.getName());
 
-        Cougar GiantCougar = new Cougar();
+        Cougar GiantCougar = new Cougar(LethalClaws.Tear);
         GiantCougar.setName("GiantCougar");
         System.out.println(GiantCougar.getName());
+
+        Cougar cougar = new Cougar(LethalClaws.Poisonous);
+
+        Wizzard wizzard = new Wizzard(Spells.Fireballs);
+
+        Flee flee = new Flee(Method.Flee);
+
+
+
     }
 
 }
 
-       /* Wizzard wizzard = new Wizzard(Spells.Fireballs);
-       // Action action = new Action(Method.Flee);
-    }
 
-} */
+

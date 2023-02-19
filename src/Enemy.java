@@ -49,7 +49,7 @@ public class Enemy {
 
   }
 
-/*  class Wizzard extends Enemy{
+ /*class Wizzard extends Enemy{
     private Spells spells;
     public Wizzard(Spells spells){
         //calls super class
@@ -60,15 +60,20 @@ public class Enemy {
 
 
   class Cougar extends Enemy {
-    private LethalClaws claws = LethalClaws.Poisonous;
-    public LethalClaws getClaws(){
-        return claws;
-    }
-      public Cougar (){
-          super("Giant Cougar", 12,5); {
-              this.claws = claws;
-          }
+    private LethalClaws lethalClaws;
+        public Cougar(LethalClaws lethalClaws){
+          super("Giant Cougar", 12,5);
+            this.lethalClaws = lethalClaws;
       }
 
     }
+    class Wizzard extends Enemy{
+      private Spells spells;
+        public Wizzard(Spells spells){
+          super("Wizzard", 20,15);
+            this.spells = spells;
+        }
+    }
+
+
 
