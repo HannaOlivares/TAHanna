@@ -1,4 +1,5 @@
 public class Action {
+    //class variables
     private Method method;
     private char hotkey;
     public char getHotkey(){
@@ -15,7 +16,7 @@ public class Action {
     public void setName(String name){
         this.name = name;
     }
-
+    //
     private Enemy kwargs;
     public Enemy getKwargs() {
         return kwargs;
@@ -86,9 +87,18 @@ class Fight extends Action{
     private Method method;
     public Fight(Method method){
 
-        super(Method.stab,"Fighting can beat enemies",'F',null);
+        super(Method.Fight,"Fighting can beat enemies",'F',null);
     this.method = method;
 }
 }
+
+class Stab extends Action{
+    private Method method;
+    public Stab(Method method){
+        super(Method.stab, "Stab can to through a body",'S',null);
+        this.method = method;
+    }
+}
+
 
 
