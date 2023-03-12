@@ -75,10 +75,10 @@ public class Main {
 
         Flee flee = new Flee(Method.Flee);
 
-
+    World world = new World();
+    world.load_tiles();
 
     }
-
 }
 
 
